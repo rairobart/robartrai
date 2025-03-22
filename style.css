@@ -1,0 +1,100 @@
+/* Import Patrick Hand Font */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Patrick Hand', cursive;
+  animation: nightMode 100s infinite linear;
+}
+
+/* Background Gradient and Animation */
+@keyframes nightMode {
+  0%, 50% {
+    background: linear-gradient(to bottom, rgba(135, 206, 235, 0.9), rgba(255, 255, 255, 0.9)); /* Increased opacity */
+    color: black;
+  }
+  50.1%, 100% {
+    background: linear-gradient(to bottom, rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9)); /* Increased opacity */
+    color: white;
+  }
+}
+
+/* Cloud Animation */
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('clouds.png'); /* Local image file */
+  animation: moveClouds 100s linear infinite;
+  opacity: 0.3; /* Decreased opacity */
+}
+
+@keyframes moveClouds {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 0; }
+}
+
+/* Sun and Moon Cycle */
+.sun-moon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  animation: sunMoonCycle 100s infinite linear;
+  opacity: 1; /* Increased opacity */
+}
+
+@keyframes sunMoonCycle {
+  0% { left: -10%; top: 5%; background: #FFD700; box-shadow: 0 0 50px rgba(255, 204, 0, 0.8); }
+  50% { left: 110%; top: 5%; background: transparent; box-shadow: none; }
+  50.1% { left: -10%; top: 5%; background: #B0C4DE; box-shadow: 0 0 50px rgba(176, 196, 222, 0.8); } /* Moon shadow */
+  100% { left: 110%; top: 5%; background: transparent; box-shadow: none; }
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: inherit;
+}
+
+/* Heading and Button Container */
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: inherit;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0 0 2rem 0; /* 2rem gap below h1 */
+}
+
+/* Button */
+.btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff6666;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+}
