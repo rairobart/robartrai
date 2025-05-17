@@ -1,20 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dying is not the way to pay a Debt</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robard Khaling Rai - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="clouds"></div>
-  <div class="sun-moon"></div>
-  <div class="logo">Your Logo</div>
-  <div class="content">
-    <h1>Dying is not the way to pay a Debt</h1>
-    <button class="btn" id="beginButton">Let's Begin</button>
-  </div>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ROBARD</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <script src="script.js"></script> <!-- Link to external JavaScript -->
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm Robard Khaling Rai</h1>
+                <p>A passionate barista with a growing interest in web development. I craft excellent coffee by day and beautiful websites by night.</p>
+                <div class="current-work">
+                    <i class="fas fa-coffee"></i>
+                    <span>Currently working at </span>
+                    <a href="https://www.instagram.com/cafearicanepal/" target="_blank">Cafe Arica Nepal</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Robard Khaling Rai, a professional barista with a passion for both coffee and coding. While I've mastered the art of espresso extraction and latte art, I'm now expanding my skills into the world of web development.</p>
+                    <p>My journey in web development began with a curiosity about how websites work, and it has grown into a serious pursuit. I bring the same attention to detail and creativity from coffee crafting to my coding projects.</p>
+                    <div class="skills">
+                        <span class="skill">Coffee Brewing</span>
+                        <span class="skill">Latte Art</span>
+                        <span class="skill">HTML/CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Customer Service</span>
+                        <span class="skill">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Work</h2>
+            <div class="portfolio-grid">
+                <!-- Coffee Portfolio Item -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Coffee Art">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Coffee Art Gallery</h3>
+                        <p>A collection of my finest latte art creations and coffee presentations.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Web Dev Portfolio Item -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Web Development">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Web Development Projects</h3>
+                        <p>My growing collection of web development projects and experiments.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+                
+                <!-- Cafe Portfolio Item -->
+                <div class="portfolio-item">
+                    <div class="portfolio-img">
+                        <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Cafe Experience">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Cafe Experience Design</h3>
+                        <p>My approach to creating memorable customer experiences in coffee shops.</p>
+                        <a href="#" class="btn">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Robard Khaling Rai. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://github.com/rairobart" target="_blank"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/robartkhaling" target="_blank"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/robart_khaling/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
