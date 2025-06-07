@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Robard Khaling Rai - Portfolio</title>
+    <meta name="description" content="Portfolio of Robard Khaling Rai - Barista & Web Developer. Explore my coffee journey and web projects.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Robard Khaling Rai - Portfolio">
+    <meta property="og:description" content="Barista & Web Developer blending coffee art with code.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://robartrai.com.np">
+    <meta property="og:image" content="https://robartrai.com.np/images/og-image.jpg">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://robartrai.com.np" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-    
+
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Header/Navigation -->
+
+    <!-- Header -->
     <header>
         <div class="container">
             <nav>
@@ -23,6 +36,9 @@
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="hamburger" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
         </div>
     </header>
@@ -48,8 +64,8 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Hello! I'm Robard Khaling Rai, a professional barista with a passion for both coffee and coding. While I've mastered the art of espresso extraction and latte art, I'm now expanding my skills into the world of web development.</p>
-                    <p>My journey in web development began with a curiosity about how websites work, and it has grown into a serious pursuit. I bring the same attention to detail and creativity from coffee crafting to my coding projects.</p>
+                    <p>Hello! I'm Robard Khaling Rai, a professional barista with a passion for both coffee and coding...</p>
+                    <p>My journey in web development began with a curiosity...</p>
                 </div>
             </div>
         </div>
@@ -60,7 +76,16 @@
         <div class="container">
             <h2 class="section-title">My Work</h2>
             <div class="portfolio-grid">
-                <!-- Portfolio items would go here -->
+                <div class="portfolio-item">
+                    <img src="images/project1.jpg" alt="Coffee Shop Website" loading="lazy">
+                    <h3>Coffee Shop Website</h3>
+                    <p>A responsive site for a local café.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/project2.jpg" alt="Latte Art Gallery" loading="lazy">
+                    <h3>Latte Art Gallery</h3>
+                    <p>Showcasing my coffee creations.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -94,7 +119,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 Robard Khaling Rai. All rights reserved.</p>
+            <p>&copy; <span id="year"></span> Robard Khaling Rai. All rights reserved.</p>
             <ul class="social-links">
                 <li><a href="https://www.linkedin.com/in/robard-rai" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                 <li><a href="https://www.facebook.com/robartkhaling" target="_blank"><i class="fab fa-facebook"></i></a></li>
@@ -103,7 +128,26 @@
         </div>
     </footer>
 
-    <!-- Custom JavaScript -->
-    <script src="script.js"></script>
+    <!-- Scripts -->
+    <script src="scripts.js"></script>
+
+    <!-- Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Robard Khaling Rai",
+        "url": "https://robartrai.com.np",
+        "jobTitle": "Barista & Web Developer",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Cafe Arica Nepal"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/robard-rai",
+            "https://www.instagram.com/robart_khaling/"
+        ]
+    }
+    </script>
 </body>
 </html>
